@@ -1,0 +1,30 @@
+
+git! workshop
+
+===================================================
+Wat leden zelf kunnen zien/doen!:
+- uitgeleend-------------
+- inlevering-------------
+- database boeken filter----------------
+- boeken beschikbaarheid-------------
+- welke ze nu op dit moment lenen---------------
+- Waarneer hun geleende boek terug moet gebracht worden-----------
+- Wachtwoord wijzeging------------
+--------------------
+Rollplays:
+- admin-----------
+- leden-------
+--------------------
+layout vrij
+Database
+-------------------
+Database tabellen:
+- Leden
+- Boeken
+- Authors
+-------------------
+Zoekfunctie:
+- zoekresultaat
+- filter
+--------------------
+Standard leen termijn 3 weeks
