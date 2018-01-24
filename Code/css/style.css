@@ -1,16 +1,39 @@
-body{
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 600 12px/1 'Open Sans', sans-serif;
+
   margin:0;
   padding: 0;
   background: url(image.jpg);
   background-size: cover;
   background-position: center;
-  font-family: sans-serif;
 
-  background-image: url("../Images/dark.jpg");
+  background-image: url("../images/dark.jpg");
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
 }
+.avatar{
+  width: 100px;
+  height: 100px
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
 .login-box{
   width: 320px;
   height: 420px;
@@ -23,23 +46,6 @@ body{
   box-sizing: border-box;
   padding: 70px 30px;
 }
-.avatar{
-  width: 100px;
-  height: 100px
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px);
-}
-
-
-
-h1{
-  margin: 0;
-  padding: 0 0 20px;
-  text-align: center;
-  font-size: 22px;
-}
 .login-box p{
   margin: 0;
   padding: 0;
@@ -50,16 +56,15 @@ h1{
   margin-bottom: 20px;
 }
 .login-box input[type="text"], input[type="password"]{
-border: none;
-border-bottom: 1px solid #fff;
-background: Transparent;
-outline: none;
-height: 40px;
-color: #fff;
-font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: Transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
 }
-.login-box input[type="submit"]
-{
+.login-box input[type="submit"]{
   border: none;
   outline: none;
   height: 40px;
@@ -73,9 +78,45 @@ font-size: 16px;
   background: #39dc79;
   color: #000;
 }
-
 .login-box a{
   text-decoration: none;
   font-size: 14px;
   color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+}
+.sidebar {
+  position: absolute;
+  width: 220px;
+}
+.title {
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #eee;
+  border-bottom: 1px solid #222;
+  background: #2a2a2a;
+}
+
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 20px 0 20px 50px;
+  font-size: 12px;
+  color: #eee;
+  border-bottom: 1px solid #fff;
+}
+.nav li a:before {
+  font: 14px fontawesome;
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+.nav li a:hover {
+  background: #444;
 }

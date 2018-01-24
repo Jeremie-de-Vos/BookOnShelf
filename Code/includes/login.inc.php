@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Transparent login</title>
-    <link rel="stylesheet" type="text/css "href="../css/style.css">
+    <title>BOS | Login</title>
   </head>
   <body>
     <div class="login-box">
-      <img src="../Images/Profile.png" class="avatar">
-      <h1>login here</h1>
+      <img src="images/Profile.png" class="avatar">
+      <h1>Login here</h1>
       <form class="" action="index.html" method="post">
-        <p>username</p>
+        <p>Username</p>
         <input type="text" name="username" placeholder="Enter Username">
-        <p>password</p>
+        <p>Password</p>
         <input type="password" name="password" placeholder="Enter Password">
         <input type="submit" name="submit" value="Login">
         <a href="#">Forget Password?</a>
@@ -19,3 +18,9 @@
     </div>
   </body>
 </html>
+
+<?php // NOTE: if(Login wass succesfull)"go to home page"else stay)?>
+<?php
+if(array_key_exists('submit',$_POST)){
+
+} ?>
