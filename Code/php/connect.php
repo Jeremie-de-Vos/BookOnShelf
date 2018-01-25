@@ -1,9 +1,7 @@
 <?php
-$connection = mysqli_connect('localhost', 'root', '');
-if (!$connection){
-    die("Database Connection Failed" . mysqli_error($connection));
-}
-$select_db = mysqli_select_db($connection, 'test');
-if (!$select_db){
-    die("Database Selection Failed" . mysqli_error($connection));
-}
+$hostname = '127.0.0.1';
+$username = 'root';
+$password = '';
+$dbh = new PDO("mysql:host=$hostname;dbname=bookonshelf",$username,$password);
+
+$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 

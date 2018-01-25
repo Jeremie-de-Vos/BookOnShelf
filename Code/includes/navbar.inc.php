@@ -1,6 +1,7 @@
 <?php
 $menuItems = array(
   array('home','Home'),
+  array('test','Test'),
   array('login','Login')
   );
  ?>

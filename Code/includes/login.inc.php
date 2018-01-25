@@ -1,3 +1,6 @@
+<?php
+  include "php/login.php";
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +10,7 @@
     <div class="login-box">
       <img src="images/Profile.png" class="avatar">
       <h1>Login here</h1>
-      <form class="" action="index.html" method="post">
+      <form class="" action="?page=login" method="post">
         <p>Username</p>
         <input type="text" name="username" placeholder="Enter Username">
         <p>Password</p>
