@@ -1,26 +1,32 @@
-<?php
-  if(md5($password) == $user['password']){
-    include 'includes/navbar.inc.php';
-    echo "you'r logged in as: ".$user['password']."";
-  }else{
-    echo "oei";
-  } ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div id="content">
+      <?php   include "php/books.php"; ?>
+      <div id="books_count">
+        <div id="book">
+          <img src="images/Book.jpg" alt="Book img">
+          <p>Name:
+          </br> Author:
+        </br> Status: </p>
+        <?php //if (text === !already borrowed) ?>
+        <button type="status" name="Borrow"></button>
+        <?php //else ?>
+        <button type="status" disabled>Click me</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
 
-
-
-
-
-  <?php
-  //if the user is logged in Greets the user with message
-  if (isset($_SESSION['username'])){
-    $username = $_SESSION['username'];
-    echo "Hai " . $username . "
-    ";
-    echo "This is the Members Area
-    ";
-    echo "<a href='logout.php'>Logout</a>";
-
-  }else{
-  //When the user visits the page first time, simple login form will be displayed.
-  }?>
+if ($row['status'] === 'already borrowed') {
+  <button type="status" name="Borrow" disabled></button>
+}else {
+  <button type="status" name="Borrow"></button>
+}

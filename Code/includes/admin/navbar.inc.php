@@ -2,7 +2,7 @@
 $menuItems = array(
   array('home','Home'),
   array('books','Boeken'),
-  array('test','Test'),
+  array('users','Users'),
   array('logout','Logout'),
   );
  ?>
@@ -12,7 +12,7 @@ $menuItems = array(
      <div class='sidebar'>
        <div class='title'>
          Book On Shelf
-       <h6>Member</h6>
+       <h6>admin</h6>
        </div>
        <div class='nav'>
         <?php

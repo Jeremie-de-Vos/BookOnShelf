@@ -1,8 +1,6 @@
 <?php
-//Start the Session
 session_start();
  require('connect.php');
-//If the form is submitted or not.
 //If the form is submitted
 if (isset($_POST['username']) and isset($_POST['password'])){
 //Assigning posted values to variables.
@@ -10,6 +8,7 @@ if (isset($_POST['username']) and isset($_POST['password'])){
   $password = $_POST['password'];
   //Checking the values are existing in the database or not
   $query = "SELECT * FROM `users` WHERE username='$username'";
+  //Location of TABLE and COLLUM
   $sth = $dbh->prepare('SELECT *
       FROM users
       WHERE username = :username');
@@ -19,9 +18,16 @@ if (isset($_POST['username']) and isset($_POST['password'])){
 
   //Login check
   if($password == $user['password']){
-    echo "you'r logged in as: ".$user['username']."";
-    //echo '<a href="index.php?page=home</a>';
-  }else{
-    echo "jammer dan, dat is fout!";
+      $_SESSION['loggedin'] = true;
+      $_SESSION['user_id'] = $user['user_id'];
+      $_SESSION['username'] = $user['username'];
+      //no password
+      $_SESSION['first_name'] = $user['first_name'];
+      $_SESSION['last_name'] = $user['last_name'];
+      $_SESSION['email'] = $user['email'];
+      $_SESSION['admin'] = $user['admin'];
+      $_SESSION['active'] = $user['active'];
+      header('Location: ?page=home');
+    }
   }
-}?>
+?>
