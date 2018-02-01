@@ -5,7 +5,7 @@ if (mysqli_connect_errno())
 {
 echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
-$result = mysqli_query($con,"SELECT * FROM users");
+$result = mysqli_query($con,"SELECT * FROM books");
 while($row = mysqli_fetch_array($result))
 {
       echo '      <div id="user">

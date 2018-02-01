@@ -166,8 +166,21 @@ h1{
 #book button{
   height: 20px;
 }
-
-
-#box input{
-  height: 300px;
+/*=====<Content/User>========================================================*/
+#user{
+  margin: 10px 10px 10px 10px;
+  float: left;
+  width: 200px;
+  background: #4286f4;
+}
+#user img{
+  width:200px;
+}
+#user p{
+  background: #fff;
+  opacity: 0.8;
+  width:200px;
+}
+#user input{
+  width: 20px;
 }

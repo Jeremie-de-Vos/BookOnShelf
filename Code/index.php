@@ -27,8 +27,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
     include 'includes/navbar.inc.php';
     include 'includes/'.$page.'.inc.php';
   }
-  //redirect to the correct page
-
 }
  else{
    //if not the right combination or not loggedin

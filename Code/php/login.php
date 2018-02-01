@@ -27,7 +27,13 @@ if (isset($_POST['username']) and isset($_POST['password'])){
       $_SESSION['email'] = $user['email'];
       $_SESSION['admin'] = $user['admin'];
       $_SESSION['active'] = $user['active'];
-      header('Location: ?page=home');
+      header('Location: ../?page=home');
     }
+    else {
+        header('Location: ../?page=home');
+    }
+  }
+  else {
+      header('Location: ../?page=home');
   }
 ?>
