@@ -23,16 +23,16 @@
           </br> Active:
           </p>
         </div>
-        <form role="form" action="" method="post">
-          <input type="text" name="id" value="9"required disabled>
-          <input type="text" name="idt" value="test2">
-          <input type="text" name="idd" value="">
-          <input type="text" name="idd" value="">
-          <input type="text" name="idd" value="">
-          <input type="text" name="idd" value="">
-          <input type="text" name="idd" value="">
-          <button type="submit" name="update">Update</button>
-          <button type="submit" name="delete">Remove</button>
+        <form action="" method="post">
+          <input type="text" name="user_id" value="auto" required disabled>
+          <input type="text" name="user_name" value="">
+          <input type="text" name="user_" value="">
+          <input type="text" name="user_" value="">
+          <input type="text" name="user_" value="">
+          <input type="text" name="user_" value="">
+          <input type="text" name="user_" value="">
+          <button type="submit" name="Add">Add</button>
+          <button type="submit" name="Clear" formaction="?page=users">Clear</button>
         </form>
       </div>';
 

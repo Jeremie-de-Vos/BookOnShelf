@@ -10,7 +10,7 @@ if (isset($_GET['page'])) {
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/style0.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
 </html>
 

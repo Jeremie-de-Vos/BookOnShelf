@@ -179,8 +179,48 @@ h1{
 #user p{
   background: #fff;
   opacity: 0.8;
-  width:200px;
+  float: left;
+  line-height: 14px;
+  height: 98px;
 }
 #user input{
-  width: 20px;
+  width: 130px;
+  height: 14px;
+  float: right;
+  font-size: 12px;
+}
+#user button{
+  width: 50%;
+  height: 30px;
+  float: left;
+}
+
+#bookmanage{
+  margin: 10px 10px 10px 10px;
+  float: left;
+  width: 200px;
+  background: #4286f4;
+}
+#bookmanage img{
+  width:200px;
+    background: rgba(0, 0, 0, 0.5);
+}
+#bookmanage p{
+  background: #fff;
+  opacity: 0.8;
+  float: left;
+  line-height: 14px;
+  height: 56px;
+  width: 70px;
+}
+#bookmanage input{
+  width: 130px;
+  height: 14px;
+  float: right;
+  font-size: 12px;
+}
+#bookmanage button{
+  width: 50%;
+  height: 30px;
+  float: left;
 }
